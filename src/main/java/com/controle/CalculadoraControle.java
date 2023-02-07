@@ -37,7 +37,7 @@ public class CalculadoraControle {
     }
 
     @PostMapping("/CalculadoraResultado")
-    public String CalculadoraResultado(@ModelAttribute ExpressaoFrm expressaoFrm, Model model) {
+    public String calculadoraResultado(@ModelAttribute ExpressaoFrm expressaoFrm, Model model) {
         //Objeto adicionado como atributo a página html
         model.addAttribute(EXPRESSAO, expressaoFrm);
 
