@@ -1,7 +1,7 @@
-[![Github Actions Status for osmarbraz/calculadora_webspring](https://github.com/osmarbraz/cadastrocliente_webspring/workflows/Integra%C3%A7%C3%A3o%20continua%20de%20Java%20com%20Maven/badge.svg)](https://github.com/osmarbraz/cadastrocliente_webspring/actions) 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=osmarbraz_cadastrocliente_webspring&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=osmarbraz_cadastrocliente_webspring)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=osmarbraz_cadastrocliente_webspring&metric=coverage)](https://sonarcloud.io/component_measures?id=osmarbraz_cadastrocliente_webspring&metric=coverage)
-[![Docker](https://img.shields.io/badge/Docker-image-brightgreen)](https://hub.docker.com/r/osmarbraz/cadastrocliente_webspring)
+[![Github Actions Status for osmarbraz/calculadora_webspring](https://github.com/osmarbraz/calculadora_webspring/workflows/Integra%C3%A7%C3%A3o%20continua%20de%20Java%20com%20Maven/badge.svg)](https://github.com/osmarbraz/calculadora_webspring/actions) 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=osmarbraz_calculadora_webspring&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=osmarbraz_calculadora_webspring)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=osmarbraz_calculadora_webspring&metric=coverage)](https://sonarcloud.io/component_measures?id=osmarbraz_calculadora_webspring&metric=coverage)
+[![Docker](https://img.shields.io/badge/Docker-image-brightgreen)](https://hub.docker.com/r/osmarbraz/calculadora_webspring)
 
 # Calculadora para WEB em 3 camadas utilizando Spring.
 
