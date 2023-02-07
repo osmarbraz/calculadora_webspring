@@ -17,7 +17,7 @@ class TestCalculadoraServico {
     private CalculadoraServico calculadoraServico;
 
     /**
-     * Testa a inserção de um cliente existente através do serviço.
+     * Testa a adição de uma expressão através do serviço.
      */
     @Test
     void testAdicao() {
@@ -27,6 +27,9 @@ class TestCalculadoraServico {
         assertEquals(retornoEsperado, retornoFeito, 0);
     }
 
+    /**
+     * Testa a subtração de uma expressão através do serviço.
+     */
     @Test
     void testGetSubtracao() {
         Expressao expressao = new Expressao(4.0, 2.0);
@@ -35,6 +38,9 @@ class TestCalculadoraServico {
         assertEquals(retornoEsperado, retornoFeito, 0);
     }
 
+    /**
+     * Testa o produto de uma expressão através do serviço.
+     */
     @Test
     void testGetProduto() {
         Expressao expressao = new Expressao(4.0, 2.0);
@@ -43,6 +49,9 @@ class TestCalculadoraServico {
         assertEquals(retornoEsperado, retornoFeito, 0);
     }
 
+    /**
+     * Testa a divisão de uma expressão através do serviço.
+     */
     @Test
     void testGetDivisao() {
         Expressao expressao = new Expressao(4.0, 2.0);

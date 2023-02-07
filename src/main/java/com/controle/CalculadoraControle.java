@@ -13,7 +13,7 @@ import com.servico.CalculadoraServico;
 import static com.util.Util.nonNullCopyProperties;
 
 /**
- * Classe de controle de cliente.
+ * Classe de controle da calculadora.
  *
  * @author osmar
  */

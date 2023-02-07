@@ -56,7 +56,7 @@ public class ExpressaoFrm {
     }
 
     /**
-     * @return A mensagem de um formulário de cliente.
+     * @return A mensagem de um formulário da calculadora.
      */
     public String getMensagem() {
         return mensagem;

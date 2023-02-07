@@ -3,7 +3,7 @@ package com.servico;
 import com.entidade.Expressao;
 
 /**
- * Interface que define as operações para a persistência de cliente.
+ * Interface que define as operações para a expressão.
  *
  * @author osmar
  */
