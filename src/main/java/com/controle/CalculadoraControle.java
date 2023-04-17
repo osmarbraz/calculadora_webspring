@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.entidade.Expressao;
@@ -30,14 +29,14 @@ public class CalculadoraControle {
     }
 
     @GetMapping("/")
-    public String frmCalculadora(@ModelAttribute ExpressaoFrm expressaoFrm, Model model) {
+    public String frmCalculadora(ExpressaoFrm expressaoFrm, Model model) {
         //Objeto adicionado como atributo a página html
         model.addAttribute(EXPRESSAO, expressaoFrm);
         return "FrmCalculadora";
     }
 
     @PostMapping("/CalculadoraResultado")
-    public String calculadoraResultado(@ModelAttribute ExpressaoFrm expressaoFrm, Model model) {
+    public String calculadoraResultado(ExpressaoFrm expressaoFrm, Model model) {
         //Objeto adicionado como atributo a página html
         model.addAttribute(EXPRESSAO, expressaoFrm);
 
