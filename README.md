@@ -16,11 +16,11 @@ Pipeline
 - prd - Empacotamento e distribuição.
 
 <br>
- - O projeto foi desenvolvido no NetBeans deve ser chamado calculadora_webspring.<br>
+ - O projeto foi desenvolvido no NetBeans e deve ser chamado calculadora_webspring.<br>
  - Utiliza o Apache Maven para a automatização da construção.<br>
  - O projeto é uma calculadora para realizar as operações de adição, subtração, produto e divisão.
- - As classes do projeto está organizado nos pacotes visão, controle e modelo.<br>
-    - Visão - Thymeleaf
+ - As classes do projeto estão organizadas nos pacotes formulário(Visão), controle e modelo.<br>
+    - Formulário - Thymeleaf
     - Controle - Spring
     - Entidade - Model
  - A pasta test contêm os testes unitários do projeto utilizando JUnit 5.<br> 
