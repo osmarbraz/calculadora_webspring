@@ -23,7 +23,7 @@ class TestCalculadoraServico {
      * @throws Exception
      */
     @Test
-    public void testCarregamentoServico() {
+    void testCarregamentoServico() {
         assertThat(calculadoraServico).isNotNull();
     }
 
