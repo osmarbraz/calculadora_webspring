@@ -9,7 +9,7 @@ public class Expressao {
 
     private double valorA;
     private double valorB;
-
+        
     /**
      * Construtor sem argumentos da classe.
      */
@@ -58,6 +58,6 @@ public class Expressao {
 
     @Override
     public String toString() {
-        return ("valorA:" + getValorA() + " - valorB :" + getValorB());
+        return ("valorA:" + getValorA() + " - valorB:" + getValorB());
     }
 }

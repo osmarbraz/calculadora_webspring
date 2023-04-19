@@ -8,6 +8,9 @@ import static com.util.Util.nonNullCopyProperties;
 
 class TestUtil {
 
+    /**
+     * Testa se o método copia os valores dos atributos.
+     */
     @Test
     void testnonNullCopyProperties() {
         Expressao expressaoOrigem = new Expressao(1, 2);
@@ -15,7 +18,7 @@ class TestUtil {
 
         nonNullCopyProperties(expressaoOrigem, expressaoDestino);
 
-        assertTrue((expressaoOrigem.getValorA() == expressaoDestino.getValorA()) 
+        assertTrue((expressaoOrigem.getValorA() == expressaoDestino.getValorA())
                 && expressaoOrigem.getValorB() == expressaoDestino.getValorB());
     }
 }

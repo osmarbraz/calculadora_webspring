@@ -10,8 +10,28 @@ public class ExpressaoFrm {
     private double valorA;
     private double valorB;
     private String operacao;
-
     private String mensagem;
+
+    /**
+     * Construtor sem parâmetros.
+     */
+    public ExpressaoFrm(){
+        this(0.0,0.0,"","");
+    }
+    
+    /**
+     * Construtor do formulário de cliente.
+     * @param valorA
+     * @param valorB
+     * @param operacao
+     * @param mensagem
+     */
+    public ExpressaoFrm(double valorA, double valorB, String operacao, String mensagem) {
+        this.valorA = valorA;
+        this.valorB = valorB;
+        this.operacao = operacao;
+        this.mensagem = mensagem;
+    }
 
     /**
      * @return o valor A

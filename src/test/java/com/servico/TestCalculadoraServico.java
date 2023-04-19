@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import com.entidade.Expressao;
+import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest
 class TestCalculadoraServico {
@@ -15,6 +16,16 @@ class TestCalculadoraServico {
      */
     @Autowired
     private CalculadoraServico calculadoraServico;
+
+    /**
+     * Verifica se serviço foi carregado.
+     *
+     * @throws Exception
+     */
+    @Test
+    public void testCarregamentoServico() {
+        assertThat(calculadoraServico).isNotNull();
+    }
 
     /**
      * Testa a adição de uma expressão através do serviço.
