@@ -88,9 +88,4 @@ public class ExpressaoFrm {
     public void setMensagem(String mensagem) {
         this.mensagem = mensagem;
     }
-
-    @Override
-    public String toString() {
-        return ("valorA:" + getValorA() + " - valorB :" + getValorB());
-    }
 }

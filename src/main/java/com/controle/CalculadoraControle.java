@@ -28,6 +28,13 @@ public class CalculadoraControle {
         this.calculadoraServico = calculadoraServico;
     }
 
+    /**
+     * Abre o formulário da calculadora.
+     * 
+     * @param expressaoFrm
+     * @param model
+     * @return 
+     */
     @GetMapping("/")
     public String frmCalculadora(ExpressaoFrm expressaoFrm, Model model) {
         //Objeto adicionado como atributo a página html
@@ -35,6 +42,13 @@ public class CalculadoraControle {
         return "FrmCalculadora";
     }
 
+    /**
+     * Calcula o resultado de uma expressão na calculadora.
+     * 
+     * @param expressaoFrm Dados do formulário da calculadora.
+     * @param model Modelo da calculadora.
+     * @return 
+     */
     @PostMapping("/CalculadoraResultado")
     public String calculadoraResultado(ExpressaoFrm expressaoFrm, Model model) {
         //Objeto adicionado como atributo a página html
@@ -44,7 +58,7 @@ public class CalculadoraControle {
         Expressao calculadora = new Expressao();
         //Copia os dados do formulário para a entidade
         nonNullCopyProperties(expressaoFrm, calculadora);
-
+        
         //Verifica o tipo da operação
         if (expressaoFrm.getOperacao().equals("adicao")) {
             //Calcula o resultado dos valores usando o serviço
@@ -61,6 +75,8 @@ public class CalculadoraControle {
                     if (expressaoFrm.getOperacao().equals("divisao")) {
                         //Calcula o resultado dos valores usando o serviço
                         expressaoFrm.setMensagem("A divisão de " + calculadora.getValorA() + " / " + calculadora.getValorB() + " = " + calculadoraServico.divisao(calculadora));
+                    } else {
+                        expressaoFrm.setMensagem("Operação inválida!");
                     }
                 }
             }

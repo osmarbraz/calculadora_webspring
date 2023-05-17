@@ -5,6 +5,9 @@ import org.junit.jupiter.api.Test;
 
 class TestCalculadora {
 
+    /**
+     * Teste da adição da calculadora.
+     */
     @Test
     void testGetAdicao() {
         Expressao expressao = new Expressao(4.0, 2.0);
@@ -14,6 +17,9 @@ class TestCalculadora {
         assertEquals(retornoEsperado, retornoFeito, 0);
     }
 
+    /**
+     * Teste da subtração da calculadora.
+     */
     @Test
     void testGetSubtracao() {
         Expressao expressao = new Expressao(4.0, 2.0);
@@ -23,6 +29,9 @@ class TestCalculadora {
         assertEquals(retornoEsperado, retornoFeito, 0);
     }
 
+    /**
+     * Teste do produto da calculadora.
+     */
     @Test
     void testGetProduto() {
         Expressao expressao = new Expressao(4.0, 2.0);
@@ -32,6 +41,9 @@ class TestCalculadora {
         assertEquals(retornoEsperado, retornoFeito, 0);
     }
 
+    /**
+     * Teste da divisão da calculadora.
+     */
     @Test
     void testGetDivisao() {
         Expressao expressao = new Expressao(4.0, 2.0);

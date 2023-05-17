@@ -7,6 +7,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class AplicacaoPrincipalTests {
 
+    /**
+     * Teste do carregamento do contexto.
+     */
     @Test
     void contextLoads() {
         assertTrue(true);
