@@ -9,11 +9,11 @@ import com.entidade.Expressao;
  */
 public interface CalculadoraServico {
 
-    public double adicao(Expressao expressao);
+    public double soma(Expressao expressao);
 
-    public double subtracao(Expressao expressao);
+    public double diferenca(Expressao expressao);
 
     public double produto(Expressao expressao);
 
-    public double divisao(Expressao expressao);
+    public double quociente(Expressao expressao);
 }

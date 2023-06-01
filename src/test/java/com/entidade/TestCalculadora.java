@@ -9,11 +9,11 @@ class TestCalculadora {
      * Teste da adição da calculadora.
      */
     @Test
-    void testGetAdicao() {
+    void testGetSoma() {
         Expressao expressao = new Expressao(4.0, 2.0);
         Calculadora calculadora = new Calculadora();
         double retornoEsperado = 6.0;
-        double retornoFeito = calculadora.getAdicao(expressao);
+        double retornoFeito = calculadora.getSoma(expressao);
         assertEquals(retornoEsperado, retornoFeito, 0);
     }
 
@@ -21,16 +21,16 @@ class TestCalculadora {
      * Teste da subtração da calculadora.
      */
     @Test
-    void testGetSubtracao() {
+    void testGetDiferenca() {
         Expressao expressao = new Expressao(4.0, 2.0);
         Calculadora calculadora = new Calculadora();
         double retornoEsperado = 2.0;
-        double retornoFeito = calculadora.getSubtracao(expressao);
+        double retornoFeito = calculadora.getDiferenca(expressao);
         assertEquals(retornoEsperado, retornoFeito, 0);
     }
 
     /**
-     * Teste do produto da calculadora.
+     * Teste da multiplicação da calculadora.
      */
     @Test
     void testGetProduto() {
@@ -45,11 +45,11 @@ class TestCalculadora {
      * Teste da divisão da calculadora.
      */
     @Test
-    void testGetDivisao() {
+    void testGetQuociente() {
         Expressao expressao = new Expressao(4.0, 2.0);
         Calculadora calculadora = new Calculadora();
         double retornoEsperado = 2.0;
-        double retornoFeito = calculadora.getDivisao(expressao);
+        double retornoFeito = calculadora.getQuociente(expressao);
         assertEquals(retornoEsperado, retornoFeito, 0);
     }
 }

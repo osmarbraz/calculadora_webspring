@@ -28,24 +28,24 @@ class TestCalculadoraServico {
     }
 
     /**
-     * Testa a adição de uma expressão através do serviço.
+     * Testa a soma de uma expressão através do serviço.
      */
     @Test
-    void testAdicao() {
+    void testGetSoma() {
         Expressao expressao = new Expressao(4.0, 2.0);
         double retornoEsperado = 6.0;
-        double retornoFeito = calculadoraServico.adicao(expressao);
+        double retornoFeito = calculadoraServico.soma(expressao);
         assertEquals(retornoEsperado, retornoFeito, 0);
     }
 
     /**
-     * Testa a subtração de uma expressão através do serviço.
+     * Testa a diferenca de uma expressão através do serviço.
      */
     @Test
-    void testGetSubtracao() {
+    void testGetDiferenca() {
         Expressao expressao = new Expressao(4.0, 2.0);
         double retornoEsperado = 2.0;
-        double retornoFeito = calculadoraServico.subtracao(expressao);
+        double retornoFeito = calculadoraServico.diferenca(expressao);
         assertEquals(retornoEsperado, retornoFeito, 0);
     }
 
@@ -61,13 +61,13 @@ class TestCalculadoraServico {
     }
 
     /**
-     * Testa a divisão de uma expressão através do serviço.
+     * Testa o quociente de uma expressão através do serviço.
      */
     @Test
-    void testGetDivisao() {
+    void testGetQuociente() {
         Expressao expressao = new Expressao(4.0, 2.0);
         double retornoEsperado = 2.0;
-        double retornoFeito = calculadoraServico.divisao(expressao);
+        double retornoFeito = calculadoraServico.quociente(expressao);
         assertEquals(retornoEsperado, retornoFeito, 0);
     }
 }

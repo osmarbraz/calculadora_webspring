@@ -16,7 +16,7 @@ public class Calculadora {
      * @param expressao uma expressão matemática.
      * @return Um valor real.
      */
-    public double getAdicao(Expressao expressao) {
+    public double getSoma(Expressao expressao) {
         return (expressao.getValorA() + expressao.getValorB());
     }
 
@@ -26,12 +26,12 @@ public class Calculadora {
      * @param expressao uma expressão matemática.
      * @return Um valor real.
      */
-    public double getSubtracao(Expressao expressao) {
+    public double getDiferenca(Expressao expressao) {
         return (expressao.getValorA() - expressao.getValorB());
     }
 
     /**
-     * Realiza o produto.
+     * Realiza o multiplicação.
      *
      * @param expressao uma expressão matemática.
      * @return Um valor real.
@@ -46,7 +46,7 @@ public class Calculadora {
      * @param expressao uma expressão matemática.
      * @return Um valor real.
      */
-    public double getDivisao(Expressao expressao) {
+    public double getQuociente(Expressao expressao) {
         return (expressao.getValorA() / expressao.getValorB());
     }
 }

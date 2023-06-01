@@ -22,15 +22,15 @@ public class CalculadoraServicoImplementacao implements CalculadoraServico {
     }
 
     @Override
-    public double adicao(Expressao expressao) {
+    public double soma(Expressao expressao) {
         //Utiliza a calculadora
-        return calculadora.getAdicao(expressao);
+        return calculadora.getSoma(expressao);
     }
 
     @Override
-    public double subtracao(Expressao expressao) {
+    public double diferenca(Expressao expressao) {
         //Utiliza a calculadora
-        return calculadora.getSubtracao(expressao);
+        return calculadora.getDiferenca(expressao);
     }
 
     @Override
@@ -40,8 +40,8 @@ public class CalculadoraServicoImplementacao implements CalculadoraServico {
     }
 
     @Override
-    public double divisao(Expressao expressao) {
+    public double quociente(Expressao expressao) {
         //Utiliza a calculadora
-        return calculadora.getDivisao(expressao);
+        return calculadora.getQuociente(expressao);
     }
 }

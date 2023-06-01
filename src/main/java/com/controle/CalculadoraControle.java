@@ -62,19 +62,19 @@ public class CalculadoraControle {
         //Verifica o tipo da operação
         if (expressaoFrm.getOperacao().equals("adicao")) {
             //Calcula o resultado dos valores usando o serviço
-            expressaoFrm.setMensagem("A adição de " + calculadora.getValorA() + " + " + calculadora.getValorB() + " = " + calculadoraServico.adicao(calculadora));
+            expressaoFrm.setMensagem("A soma de " + calculadora.getValorA() + " + " + calculadora.getValorB() + " = " + calculadoraServico.soma(calculadora));
         } else {
             if (expressaoFrm.getOperacao().equals("subtracao")) {
                 //Calcula o resultado dos valores usando o serviço
-                expressaoFrm.setMensagem("A subtração de " + calculadora.getValorA() + " - " + calculadora.getValorB() + " = " + calculadoraServico.subtracao(calculadora));
+                expressaoFrm.setMensagem("A diferença de " + calculadora.getValorA() + " - " + calculadora.getValorB() + " = " + calculadoraServico.diferenca(calculadora));
             } else {
-                if (expressaoFrm.getOperacao().equals("produto")) {
+                if (expressaoFrm.getOperacao().equals("multiplicacao")) {
                     //Calcula o resultado dos valores usando o serviço
                     expressaoFrm.setMensagem("O produto de " + calculadora.getValorA() + " * " + calculadora.getValorB() + " = " + calculadoraServico.produto(calculadora));
                 } else {
                     if (expressaoFrm.getOperacao().equals("divisao")) {
                         //Calcula o resultado dos valores usando o serviço
-                        expressaoFrm.setMensagem("A divisão de " + calculadora.getValorA() + " / " + calculadora.getValorB() + " = " + calculadoraServico.divisao(calculadora));
+                        expressaoFrm.setMensagem("O quociente de " + calculadora.getValorA() + " / " + calculadora.getValorB() + " = " + calculadoraServico.quociente(calculadora));
                     } else {
                         expressaoFrm.setMensagem("Operação inválida!");
                     }

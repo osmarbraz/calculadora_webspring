@@ -80,11 +80,11 @@ class TestCalculadoraControle {
         expressaoFrm.setValorB(2);
         expressaoFrm.setOperacao("adicao");
 
-        when(servico.adicao(any())).thenReturn(6.0);
+        when(servico.soma(any())).thenReturn(6.0);
 
         String resultado = controle.calculadoraResultado(expressaoFrm, model);
         assertEquals("CalculadoraResultado", resultado);
-        assertEquals("A adição de 4.0 + 2.0 = 6.0", expressaoFrm.getMensagem());
+        assertEquals("A soma de 4.0 + 2.0 = 6.0", expressaoFrm.getMensagem());
 
         verify(model, times(1)).addAttribute(anyString(), any());        
     }
@@ -99,11 +99,11 @@ class TestCalculadoraControle {
         expressaoFrm.setValorB(2);
         expressaoFrm.setOperacao("subtracao");
 
-        when(servico.subtracao(any())).thenReturn(2.0);
+        when(servico.diferenca(any())).thenReturn(2.0);
 
         String resultado = controle.calculadoraResultado(expressaoFrm, model);
         assertEquals("CalculadoraResultado", resultado);
-        assertEquals("A subtração de 4.0 - 2.0 = 2.0", expressaoFrm.getMensagem());
+        assertEquals("A diferença de 4.0 - 2.0 = 2.0", expressaoFrm.getMensagem());
 
         verify(model, times(1)).addAttribute(anyString(), any()); 
     }
@@ -116,7 +116,7 @@ class TestCalculadoraControle {
         ExpressaoFrm expressaoFrm = new ExpressaoFrm();
         expressaoFrm.setValorA(4);
         expressaoFrm.setValorB(2);
-        expressaoFrm.setOperacao("produto");
+        expressaoFrm.setOperacao("multiplicacao");
 
         when(servico.produto(any())).thenReturn(8.0);
 
@@ -137,11 +137,11 @@ class TestCalculadoraControle {
         expressaoFrm.setValorB(2);
         expressaoFrm.setOperacao("divisao");
 
-        when(servico.divisao(any())).thenReturn(2.0);
+        when(servico.quociente(any())).thenReturn(2.0);
 
         String resultado = controle.calculadoraResultado(expressaoFrm, model);
         assertEquals("CalculadoraResultado", resultado);
-        assertEquals("A divisão de 4.0 / 2.0 = 2.0", expressaoFrm.getMensagem());
+        assertEquals("O quociente de 4.0 / 2.0 = 2.0", expressaoFrm.getMensagem());
 
         verify(model, times(1)).addAttribute(anyString(), any()); 
     }
